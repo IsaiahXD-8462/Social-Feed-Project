@@ -1,9 +1,10 @@
 import React from 'react';
 
-const ImagePresenter = (props) => {
+const ImagePresenter = ({ image, altText }) => {
     return ( 
         <div>
-            I'm the div!
+            <p>I'm the div!</p>
+            <img src={image} alt="{altText}" />
         </div>
      );
 }
