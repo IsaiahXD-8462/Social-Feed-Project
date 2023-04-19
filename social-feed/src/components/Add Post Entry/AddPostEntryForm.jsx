@@ -13,7 +13,7 @@ const AddPostEntryForm = (props) => {
             date: setDate
         };
         console.log(newPost);
-        props.addNewEntryProperty(addNewPost)
+        props.addNewEntryProperty(newPost)
     }
 
     return ( 

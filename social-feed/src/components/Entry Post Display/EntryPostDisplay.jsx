@@ -10,7 +10,7 @@ const EntryPostDisplay = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.parentEntries.map((entry, index) => {
+          {props.parentPosts.map((entry, index) => {
             return (
               <tr>
                 <td>(index + 1)</td> 
