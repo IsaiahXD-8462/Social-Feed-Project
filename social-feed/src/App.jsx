@@ -5,6 +5,7 @@ import tumblr_figure_8_rainbow_heart from "./asset/tumblr_figure_8_rainbow_heart
 import EntryPostDisplay from './components/Entry Post Display/EntryPostDisplay';
 import AddPostEntryForm from './components/Add Post Entry/AddPostEntryForm';
 import EntriesChartTracker from './components/Entries Chart Tracker/EntriesChartTracker'
+import LikeDislike from './components/Like and Dislike/LikeAndDislike';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <EntryPostDisplay parentPosts={posts} />
       <AddPostEntryForm addNewEntryProperty={addNewPost} />
       <EntriesChartTracker />
+      <LikeDislike />
       {/* ImagePresenter() */}
     </div>
   );
