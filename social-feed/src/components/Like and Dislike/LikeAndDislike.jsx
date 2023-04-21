@@ -6,7 +6,7 @@ const LikeDislike = (props) => {
     const [DislikeButtonClass, setDislikeButtonClass] = useState("inactive") 
     
     function handleLike(){
-        if(likeButtonClass === "inactive")
+        if(likeButtonClass === "inactive") {
             setLikeButtonClass("active") && setDislikeButtonClass("inactive");
         }
         else {
@@ -19,14 +19,14 @@ const LikeDislike = (props) => {
             setDislikeButtonClass("active") && setLikeButtonClass("inactive");
         }
         else {
-            setDisikeButtonClass("inactive");
+            setDislikeButtonClass("inactive");
         }    
     }
 
         return ( 
         <div>
             <button className={likeButtonClass} onClick={handleLike}>Like</button>
-            <button className={DislikeButtonClass} onClick={handleDislike}>Like</button> 
+            <button className={DislikeButtonClass} onClick={handleDislike}>Dislike</button> 
         </div>
      );
 }

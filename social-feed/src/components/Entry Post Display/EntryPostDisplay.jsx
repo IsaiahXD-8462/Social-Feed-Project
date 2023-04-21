@@ -1,3 +1,4 @@
+import LikeDislike from "../Like and Dislike/LikeAndDislike";
 
 const EntryPostDisplay = (props) => {
     return (
@@ -13,9 +14,10 @@ const EntryPostDisplay = (props) => {
           {props.parentPosts.map((entry, index) => {
             return (
               <tr>
-                <td>(index + 1)</td> 
-                <td>(entry.post)</td>
-                <td>(entry.date)</td>
+                <td>{index + 1}</td> 
+                <td>{entry.post}</td>
+                <td>{entry.date}</td>
+                <td><LikeDislike></LikeDislike></td>
               </tr>
             );
           })}

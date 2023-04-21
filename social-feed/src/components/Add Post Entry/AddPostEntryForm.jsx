@@ -9,9 +9,9 @@ const AddPostEntryForm = (props) => {
     function handleSubmit(event) {
         event.preventDefault();
         let newPost = {
-            post: makePost,
-            date: setDate
-        };
+            post: post,
+            date: date
+        };debugger
         console.log(newPost);
         props.addNewEntryProperty(newPost)
     }

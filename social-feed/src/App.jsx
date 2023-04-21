@@ -9,10 +9,10 @@ import LikeDislike from './components/Like and Dislike/LikeAndDislike';
 
 function App() {
 
-  const [posts, setPosts] = useState([{Post: "I love you!", Date: '02/14/2022'}])
+  const [posts, setPosts] = useState([{post: "I love you!", date: '02/14/2022'}])
 
   function addNewPost(post){
-    let tempPosts = [...post, post];
+    let tempPosts = [...posts, post];
 
     setPosts(tempPosts);
   }
@@ -24,8 +24,9 @@ function App() {
       <ImagePresenter image = {tumblr_figure_8_rainbow_heart} altText = "Gif of the rainbow"/>
       <EntryPostDisplay parentPosts={posts} />
       <AddPostEntryForm addNewEntryProperty={addNewPost} />
-      <EntriesChartTracker />
       <LikeDislike />
+      <EntriesChartTracker />
+      
       {/* ImagePresenter() */}
     </div>
   );
