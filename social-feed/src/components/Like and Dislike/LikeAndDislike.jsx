@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 const LikeDislike = (props) => {
     
     const [likeButtonClass, setLikeButtonClass] = useState("inactive", "active")
-    const [DislikeButtonClass, setDislikeButtonClass] = useState("inactive", "active") 
+    const [DislikeButtonClass, setDislikeButtonClass] = useState("disable", "able") 
     
     function handleLike(){
         if(likeButtonClass === "inactive") {
-            setLikeButtonClass("active") && setDislikeButtonClass("inactive");
+            setLikeButtonClass("active") && setDislikeButtonClass("disable");
         }
         else {
             setLikeButtonClass("inactive");
@@ -15,11 +15,11 @@ const LikeDislike = (props) => {
     }
 
     function handleDislike(){
-        if(DislikeButtonClass === "inactive") {
-            setDislikeButtonClass("active") && setLikeButtonClass("inactive");
+        if(DislikeButtonClass === "disable") {
+            setDislikeButtonClass("able") && setLikeButtonClass("inactive");
         }
         else {
-            setDislikeButtonClass("inactive");
+            setDislikeButtonClass("disable");
         }    
     }
 

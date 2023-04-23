@@ -27,14 +27,22 @@ img {
      ;
 }
 
-.inactive{
+.inactive {
     color: black;
     background-color: white;
 }
 
-likeButtonClass.active{
-    background-color: green;
+.active {
+    color: whitesmoke;
+    background-color: green; 
 }
-likeButtonClass.active{
-    background-color: red;
+
+.disable {
+    color: black;
+    background-color: white; 
+}
+
+.able {
+    color: whitesmoke;
+    background-color: red; 
 }
