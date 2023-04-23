@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const LikeDislike = (props) => {
     
-    const [likeButtonClass, setLikeButtonClass] = useState("inactive")
-    const [DislikeButtonClass, setDislikeButtonClass] = useState("inactive") 
+    const [likeButtonClass, setLikeButtonClass] = useState("inactive", "active")
+    const [DislikeButtonClass, setDislikeButtonClass] = useState("inactive", "active") 
     
     function handleLike(){
         if(likeButtonClass === "inactive") {
