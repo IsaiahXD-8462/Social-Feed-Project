@@ -11,7 +11,7 @@ const AddPostEntryForm = (props) => {
         let newPost = {
             post: post,
             date: date
-        };debugger
+        };
         console.log(newPost);
         props.addNewEntryProperty(newPost)
     }
