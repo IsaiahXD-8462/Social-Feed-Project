@@ -1,6 +1,16 @@
+body {
+    background-color:fuchsia ;
+}
+
+form {
+    background-color: blue;
+    color: whitesmoke;
+}
 table {
     background-color: rebeccapurple;
     color: whitesmoke;
+    margin: auto;
+    width: 100%;
 }
 
 header {
@@ -12,7 +22,19 @@ tr {
     color: whitesmoke;
 }
 
-button {
-    color:green;
-    color: red;
+img {
+    border-color:blueviolet;
+     ;
+}
+
+.inactive{
+    color: black;
+    background-color: white;
+}
+
+likeButtonClass.active{
+    background-color: green;
+}
+likeButtonClass.active{
+    background-color: red;
 }

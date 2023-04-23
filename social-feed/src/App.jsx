@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImagePresenter from './components/ImagePresenter';
+import ImagePresenter from './components/Image Presenter/ImagePresenter';
 import tumblr_bouncing_rainbow_heart from "./asset/tumblr_bouncing_rainbow_heart.gif"
 import tumblr_figure_8_rainbow_heart from "./asset/tumblr_figure_8_rainbow_heart.gif"
 import EntryPostDisplay from './components/Entry Post Display/EntryPostDisplay';
@@ -19,14 +19,11 @@ function App() {
 
   return (
     <div>
-      Hello World!!
+      Rainbow Posts
       <ImagePresenter image = {tumblr_bouncing_rainbow_heart} altText = "Gif of the rainbow"/>
-      <ImagePresenter image = {tumblr_figure_8_rainbow_heart} altText = "Gif of the rainbow"/>
-      <EntryPostDisplay parentPosts={posts} />
       <AddPostEntryForm addNewEntryProperty={addNewPost} />
-      <LikeDislike />
-      <EntriesChartTracker />
-      
+      <EntryPostDisplay parentPosts={posts} />
+      <ImagePresenter image = {tumblr_figure_8_rainbow_heart} altText = "Gif of the rainbow"/>
       {/* ImagePresenter() */}
     </div>
   );
